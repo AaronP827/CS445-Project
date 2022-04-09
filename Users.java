@@ -89,4 +89,11 @@ public class Users{
     public void setName(String name) {
         this.name = name;
     }    
+
+    public String toString(){
+        return getUid() + ", " + getName() + ", " 
+        + getStreet() + ", " + getZip() + ", " + getPhone() + 
+        ", " +getPicture() + ", " + Boolean.toString(isActive()) 
+        + ", " + getDateCreated();
+    }
 }
