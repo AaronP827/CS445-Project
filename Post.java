@@ -5,10 +5,11 @@ public abstract class Post {
     private String description;
     private String startDate;
     private String endDate;
-    private String seperateZips;
+    private String[] seperateZips;
     private boolean active;
+    private String dateCreated;
 
-    public Post(String uid, String pid, String type, String description, String startDate, String endDate, String seperateZips, boolean active){
+    public Post(String uid, String pid, String type, String description, String startDate, String endDate, String[] seperateZips, boolean active, String dateCreated){
         this.setUid(uid);
         this.setPid(pid);
         this.setType(type);
@@ -17,6 +18,15 @@ public abstract class Post {
         this.setEndDate(endDate);
         this.setSeperateZips(seperateZips);
         this.setActive(active);
+        this.setDateCreated(dateCreated);
+    }
+
+    public String getDateCreated() {
+        return dateCreated;
+    }
+
+    public void setDateCreated(String dateCreated) {
+        this.dateCreated = dateCreated;
     }
 
     public boolean isActive() {
@@ -27,11 +37,11 @@ public abstract class Post {
         this.active = active;
     }
 
-    public String getSeperateZips() {
+    public String[] getSeperateZips() {
         return seperateZips;
     }
 
-    public void setSeperateZips(String seperateZips) {
+    public void setSeperateZips(String[] seperateZips) {
         this.seperateZips = seperateZips;
     }
 
@@ -81,5 +91,11 @@ public abstract class Post {
 
     public void setUid(String uid) {
         this.uid = uid;
+    }
+    public String toString(){
+        return getUid() + ", " + getPid() + ", " 
+        + getDescription() + ", " + getStartDate() + ", " + getEndDate() + 
+        ", " +getSeperateZips() + ", " + Boolean.toString(isActive()) 
+        + ", " + getDateCreated();
     }
 }
