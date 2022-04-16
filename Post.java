@@ -92,10 +92,4 @@ public abstract class Post {
     public void setUid(String uid) {
         this.uid = uid;
     }
-    public String toString(){
-        return getUid() + ", " + getPid() + ", " 
-        + getDescription() + ", " + getStartDate() + ", " + getEndDate() + 
-        ", " +getSeperateZips() + ", " + Boolean.toString(isActive()) 
-        + ", " + getDateCreated();
-    }
 }

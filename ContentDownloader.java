@@ -3,47 +3,47 @@ import java.util.ArrayList;
 public class ContentDownloader {
     private String urlStart = "http://localhost:8080/bn/api";
 
-    public Users createUser(){
+    public void createUser(){
 
     }
     public void activateUser(){
 
     }
-    public Users updateUser(){
+    public void updateUser(){
 
     }
     public void deleteUser(){
 
     }
-    public ArrayList<Users> viewAllUsers(){
+    public void viewAllUsers(){
 
     }
-    public Users viewUser(){
+    public void viewUser(){
 
     }
-    public ArrayList<Users> searchUsers(){
+    public void searchUsers(){
 
     }
 
-    public Ask createAsk(){
+    public void createAsk(){
 
     }
     public void activateAsk(){
 
     }
-    public Ask updateAsk(){
+    public void updateAsk(){
 
     }
     public void deleteask(){
 
     }
-    public ArrayList<Ask> viewAllAsks(){
+    public void viewAllAsks(){
 
     }
-    public Ask viewAsk(){
+    public void viewAsk(){
 
     }
-    public ArrayList<Ask> searchAsks(){
+    public void searchAsks(){
         
     }
 }
