@@ -60,4 +60,10 @@ public class TestProjects {
 		assertEquals("description", t.getDescription());
 		assertEquals("date", t.getDateCreated());
 	}
+	@Test
+	void test_report() {
+		Reports r = new Reports("rid", "name");
+		assertEquals("rid", r.getRid());
+		assertEquals("name", r.getName());
+	}
 }
